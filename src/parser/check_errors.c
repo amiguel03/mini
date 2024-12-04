@@ -35,10 +35,7 @@ int valid_pipe(char *input, int i)
 	while(input[i])
 	{
 		if (input[i] == '|' && character == false)
-		{
-			printf("Error pipe\n");
 			return (-1);
-		}
 		if (input[i] == '|' && character == true)
 			return (0);
 		if (input[i] != '|' && input[i] != ' ')
@@ -55,7 +52,6 @@ int	error_pipe(char *input)
 	i = 0;
 	while (input[i] != '\0')
 	{
-		printf("input[%d]: %c\n", i, input[i]);
 		if (input[i] == '"' || input[i] == '\'')
 		{
 			i = ft_locate_next_quote(i + 1, input, input[i]);
