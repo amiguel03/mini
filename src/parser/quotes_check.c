@@ -1,12 +1,5 @@
 #include "../../inc/minishell.h"
 
-int	locate_next_quote(int i, char *input, char quote)
-{
-	while (input && input[i] && input[i] != quote)
-		i++;
-	return (i);
-}
-
 int	pairs_check(char *input, int *i, char quote)
 {
 	int count;
