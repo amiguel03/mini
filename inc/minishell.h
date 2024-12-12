@@ -18,5 +18,16 @@
 
 int	headline(void);
 int main();
+int	ft_locate_next_quote(int i, char *input, char quote);
+int	ft_nothing_r(char *input, int i);
+int	ft_nothing(char *input, int i);
+int valid_pipe(char *input, int i);
+int	error_pipe(char *input);
+int	strstr_len(char **str);
+void	strstr_free(char **str);
+char	**strstr_dup(char **str);
+int	strnstrstr(char **str, char *locate);
+char **strstr_join(char **str, char **str1);
+
 
 #endif

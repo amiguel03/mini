@@ -25,14 +25,14 @@ int	ft_nothing(char *input, int i)
 	return (0);
 }
 
-int valid_pipe(char *input, int i)
+int	valid_pipe(char *input, int i)
 {
 	bool	character;
 
 	if (i - 1 == -1)
 		return (-1);
 	i--;
-	while(input[i])
+	while (input[i])
 	{
 		if (input[i] == '|' && character == false)
 			return (-1);
@@ -47,7 +47,7 @@ int valid_pipe(char *input, int i)
 
 int	error_pipe(char *input)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (input[i] != '\0')
