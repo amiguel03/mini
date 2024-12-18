@@ -66,7 +66,7 @@ int	strnstrstr(char **str, char *locate)
 	return (total);
 }
 
-char **strstr_join(char **str, char **str1)
+char	**strstr_join(char **str, char **str1)
 {
 	char	**string;
 	int	size;

@@ -15,7 +15,7 @@ CFLAGS = -g3 -Wall -Wextra -Werror# -Wpedantic -Wshadow -Wformat -Wnull-derefere
 # Archivos fuente (agregar los que se necesiten, separar por carpetas)
 
 
-MAIN_SRCS = 	src/utils/headline.c \
+MAIN_SRCS = 	src/main/headline.c \
 				src/main/main.c\
 
 

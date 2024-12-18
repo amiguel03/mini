@@ -15,6 +15,7 @@
 # include <string.h>
 # include <sys/wait.h>
 # include <unistd.h>
+#include <ctype.h>
 
 // headline.c
 int			headline(void);

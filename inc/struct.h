@@ -8,6 +8,32 @@ typedef struct s_files
 	char	**f_order;
 }			t_files;
 
+typedef struct s_env
+{
+	int			env_amount;
+	char		*path;
+	char		**env;
+}				t_env;
+
+typedef struct s_names
+{
+	int		fd;
+	int		fd_tmp;
+	int		fd_infile;
+	int		fd_outfile;
+
+}			t_names;
+
+typedef struct s_type
+{
+	int			infile;
+	int			append;
+	int			outfile;
+	int			here_doc;
+	char		*in;
+	char		*out;
+}				t_type;
+
 typedef	struct s_red
 {
 	int		si_ri;
@@ -30,18 +56,20 @@ typedef struct s_flags
 
 typedef struct s_cmd
 {
-	int		exit;
-	int		size;
-	int		error;
-	int		built;
-	int		args_count;
-	char	*cmd;
-	char	**tmp;
-	char	**args;
-	char	**quotes_args;
-	t_files	*files;
+	int				exit;
+	int				size;
+	int				error;
+	int				built;
+	int				args_amount;
+	char			*cmd;
+	char			**tmp;
+	char			**args;
+	char			**quote_args;
+	t_type			*type;
+	t_files			*files;
+	t_names			*names;
 	struct s_cmd	*next;
-}				t_cmd;
+}					t_cmd;
 
 typedef	struct	s_mini
 {
